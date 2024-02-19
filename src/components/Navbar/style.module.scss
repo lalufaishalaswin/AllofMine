@@ -1,0 +1,177 @@
+@import '@styles/base';
+
+.headerWrapper {
+  height: 85px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.25rem 0.75rem rgba(25, 49, 83, 0.2) !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .contentWrapper {
+    @include directionX;
+
+    color: var(--color-text);
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    .logoImage {
+      @include directionX;
+      cursor: pointer;
+      align-items: center;
+
+      .logo {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+      }
+      .title {
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+
+    .toolbar {
+      gap: 2rem;
+      @include directionX;
+      .theme {
+        @include directionX;
+        align-items: center;
+        margin-right: 0.5rem;
+        cursor: pointer;
+
+        .themeIcon {
+          color: #fff;
+        }
+      }
+      .toggle {
+        @include directionX;
+        align-items: center;
+        cursor: pointer;
+
+        .avatar {
+          width: 1.2rem;
+          height: 1.2rem;
+          box-shadow: #fff;
+          margin-right: 0.5rem;
+        }
+
+        .lang {
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: #fff;
+        }
+
+        .arrow {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .textWrapper {
+    display: flex;
+    justify-content: start;
+    padding: 9rem;
+    .text {
+      color: #000;
+    }
+  }
+}
+
+.menu {
+  @include directionX;
+  align-items: center;
+
+  .menuAvatar {
+    width: 1rem;
+    height: 1rem;
+    box-shadow: #000;
+    margin-right: 0.5rem;
+  }
+
+  .menuLang {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+  }
+}
+
+.headerWrapperactive {
+  background: #f1f1f1;
+  height: 85px;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.25rem 0.75rem rgba(25, 49, 83, 0.2) !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .contentWrapper {
+    @include directionX;
+
+    color: var(--color-text);
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+
+    .logoImage {
+      @include directionX;
+      cursor: pointer;
+      align-items: center;
+
+      .logo {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+      }
+      .title {
+        color: #000;
+        font-weight: 700;
+      }
+    }
+
+    .toolbar {
+      gap: 2rem;
+      @include directionX;
+      .theme {
+        @include directionX;
+        align-items: center;
+        margin-right: 0.5rem;
+        cursor: pointer;
+
+        .themeIcon {
+          color: #000;
+        }
+      }
+      .toggle {
+        @include directionX;
+        align-items: center;
+        cursor: pointer;
+
+        .avatar {
+          width: 1.2rem;
+          height: 1.2rem;
+          box-shadow: #000;
+          margin-right: 0.5rem;
+        }
+
+        .lang {
+          font-family: Poppins, Arial, Helvetica, sans-serif;
+          font-weight: 700;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: #000;
+        }
+
+        .arrow {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

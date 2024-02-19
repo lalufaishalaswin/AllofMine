@@ -1,0 +1,26 @@
+@import '@styles/base';
+
+.container{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-image: url('../../assets/TW.png');
+    flex-direction: column;
+    background-size: cover;
+    height: 600px;
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+   }
+   .text{
+    padding: 2rem;
+    margin-top: 5rem;
+   }
+   .text p{
+    width: 70%;}
+}
+ 
